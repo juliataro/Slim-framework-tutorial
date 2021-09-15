@@ -4,6 +4,7 @@
             "App\\": "src/"
         } 
     },
+    
 
     "require": {
         "slim/slim": "^4.8",

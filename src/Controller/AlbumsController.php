@@ -7,6 +7,8 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Exception\HttpNotFoundException;
 
 class AlbumsController extends Controller
+
+
 {
     public function default(Request $request, Response $response)
     {

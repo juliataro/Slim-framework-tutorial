@@ -30,6 +30,7 @@ $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 $errorMiddleware->setErrorHandler(Slim\Exception\HttpNotFoundException::class, function(Psr\Http\Message\ServerRequestInterface $request) use ($container){
         $controller = new App\Controller\ExceptionController($container);
          return $controller->notFound($request);
+         
  }
  );
 
