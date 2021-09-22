@@ -16,6 +16,9 @@ class IndexController extends Controller
     }
 
 	public function homepage(Request $request, Response $response){
-		return $this->render($response,'homepage.html');
+		//return $this->render($response,'homepage.html');
+        $html = $this->ci->get('templating')->render('homepage.html');
+        $response->getBody()->write($html);
+        return $response;
 	}
 }
