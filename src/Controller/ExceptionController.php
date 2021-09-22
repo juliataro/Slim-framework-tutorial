@@ -9,8 +9,9 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 
 class ExceptionController extends Controller 
 {
-	public function notFound(Request $request) {
-		$response = new Response;
-		return $this->render($response, 'notFound.html');
-	}
+    public function notFound(Request $request)
+    {
+        $response = new Response;
+        return $this->render($response, 'notfound.html');
+    }
 }
